@@ -41,7 +41,7 @@ jobs:
         TNAME: ZTE_E8820S
       run: |
         cd /opt/rt-n56u/trunk
-        sed -i 's/zxfv/xfv/' /trunk/tools/Makefile
+        sed -i 's/zxfv/xfv/' /opt/rt-n56u/trunk/tools/Makefile
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
         exit 1
